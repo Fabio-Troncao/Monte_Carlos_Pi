@@ -1,0 +1,6 @@
+Calculando o valor de Pi via método de Monte Carlo
+
+Dos 4 codigos o monteCarloPi representa a função usada para testar a saida.
+O MonteCarloSequencial representa o calculo sequencial com o tempo total.
+O MonteCarlosPiPontoaPonto representa o calculo da tarefa e o tempo realizado.
+) MonteCarlosPiColetiva represente a tarefa do calculo com os tempos, calculando com mais de uma maquina.
