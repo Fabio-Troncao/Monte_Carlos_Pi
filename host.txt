@@ -1,1 +1,4 @@
-192.168.11.33
+#Neste documeento so deixar os ip's das maquinas que irão fazer a leitura coletiva:
+192.168.02.02
+192.168.02.05
+192.168.02.08
