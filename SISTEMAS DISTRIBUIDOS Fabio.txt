@@ -12,7 +12,7 @@ Tempo de execução02 em segundos de relógio: 402.83532200000001921580
 
 Código com resultado para Pi Monte Carlo com comunicação ponto a ponto/send-recv considerando 2 processadores:
 
-PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 2 python MonteCarlosPiMestre.py
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 2 python MonteCarlosPiPontoaPonto.py
 Digite o numero para calcular o somatorio de Pi Monte Carlos:
 999999999
 Escravo de rank 1: 999999999
@@ -24,7 +24,7 @@ Tempo de comunicacao:  3.025705599999128
 
 Código com resultado para Pi Monte Carlo com comunicação ponto a ponto/send-recv considerando 4 processadores :
 
-PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 4 python MonteCarlosPiMestre.py
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 4 python MonteCarlosPiPontoaPonto.py
 Digite o numero para calcular o somatorio de Pi Monte Carlos:
 999999999
 Escravo de rank 3: 999999999
@@ -40,7 +40,7 @@ Tempo de comunicacao:  4.491177400000197
 
 Código com resultado para Pi Monte Carlo com comunicação ponto a ponto/send-recv considerando 8 processadores :
 
-PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 8 python MonteCarlosPiMestre.py
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 8 python MonteCarlosPiPontoaPonto.py
 Digite o numero para calcular o somatorio de Pi Monte Carlos:
 999999999
 Escravo de rank 1: 999999999
