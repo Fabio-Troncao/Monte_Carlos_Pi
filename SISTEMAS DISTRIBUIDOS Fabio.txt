@@ -1,0 +1,90 @@
+SISTEMAS DISTRIBUÍDOS:
+
+Aluno: Fábio Manuel Martins Troncão
+
+Testes feitos em Computador pessoal:
+
+Código com resultado para Pi Monte Carlo Sequencial:
+
+Digite o número para calcular o valor Pi Monte Carlo: 999999999
+Resultado final do valor Pi Monte Carlo= 3.1416063871416062
+Tempo de execução02 em segundos de relógio: 402.83532200000001921580 
+
+Código com resultado para Pi Monte Carlo com comunicação ponto a ponto/send-recv considerando 2 processadores:
+
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 2 python MonteCarlosPiMestre.py
+Digite o numero para calcular o somatorio de Pi Monte Carlos:
+999999999
+Escravo de rank 1: 999999999
+rank do escravo do qual recebeu= 1
+Resultado final do somatorio de Pi Monte Carlos= 3.141503623141504
+Tempo de execucao em segundos de relogio:  286.80970929999967
+Tempo de execucao02 em segundos de relogio:  286.809656
+Tempo de comunicacao:  3.025705599999128
+
+Código com resultado para Pi Monte Carlo com comunicação ponto a ponto/send-recv considerando 4 processadores :
+
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 4 python MonteCarlosPiMestre.py
+Digite o numero para calcular o somatorio de Pi Monte Carlos:
+999999999
+Escravo de rank 3: 999999999
+Escravo de rank 1: 999999999
+Escravo de rank 2: 999999999
+rank do escravo do qual recebeu= 1
+rank do escravo do qual recebeu= 2
+rank do escravo do qual recebeu= 3
+Resultado final do somatorio de Pi Monte Carlos= 3.141575359141575
+Tempo de execucao em segundos de relogio:  147.0680129000002
+Tempo de execucao02 em segundos de relogio:  147.0684
+Tempo de comunicacao:  4.491177400000197
+
+Código com resultado para Pi Monte Carlo com comunicação ponto a ponto/send-recv considerando 8 processadores :
+
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -np 8 python MonteCarlosPiMestre.py
+Digite o numero para calcular o somatorio de Pi Monte Carlos:
+999999999
+Escravo de rank 1: 999999999
+Escravo de rank 3: 999999999
+Escravo de rank 5: 999999999
+Escravo de rank 4: 999999999
+Escravo de rank 6: 999999999
+Escravo de rank 2: 999999999
+Escravo de rank 7: 999999999
+rank do escravo do qual recebeu= 1
+rank do escravo do qual recebeu= 2
+rank do escravo do qual recebeu= 3
+rank do escravo do qual recebeu= 4
+rank do escravo do qual recebeu= 5
+rank do escravo do qual recebeu= 6
+rank do escravo do qual recebeu= 7
+Resultado final do somatorio de Pi Monte Carlos= 3.1416136431416137
+Tempo de execucao em segundos de relogio:  95.5150534000004
+Tempo de execucao02 em segundos de relogio:  95.515088
+Tempo de comunicacao:  2.7775870999994368
+
+Código com resultado para Pi Monte Carlo com comunicação coletiva/broadcast-reduce considerando 2 processadores:
+
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -n 2 -machinefile host.txt python MonteCarlosPiColetiva.py
+Digite o numero para calcular o somatorio de Pi Monte Carlos:
+999999999
+Resultado final do somatorio de Pi Monte Carlos= 3.1415285431415283
+Tempo de execucao em segundos de relogio:  207.3157427999995
+Tempo de execucao02 em segundos de relogio:  207.316414
+
+Código com resultado para Pi Monte Carlo com comunicação coletiva/broadcast-reduce considerando 4 processadores:
+
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -n 4 -machinefile host.txt python MonteCarlosPiColetiva.py
+Digite o numero para calcular o somatorio de Pi Monte Carlos:
+999999999
+Resultado final do somatorio de Pi Monte Carlos= 3.1416375831416374
+Tempo de execucao em segundos de relogio:  110.57594379999864
+Tempo de execucao02 em segundos de relogio:  110.575959
+
+Código com resultado para Pi Monte Carlo com comunicação coletiva/broadcast-reduce considerando 8 processadores:
+
+PS C:\Users\fabio\Documents\UFT\Sistemas Destribuidos> mpiexec -n 8 -machinefile host.txt python MonteCarlosPiColetiva.py
+Digite o numero para calcular o somatorio de Pi Monte Carlos:
+999999999
+Resultado final do somatorio de Pi Monte Carlos= 3.1416074111416075
+Tempo de execucao em segundos de relogio:  78.1829902999998
+Tempo de execucao02 em segundos de relogio:  78.182899
